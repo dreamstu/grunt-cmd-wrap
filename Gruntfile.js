@@ -1,6 +1,6 @@
 /*
- * grunt-fed
- * https://github.com/crossjs/grunt-fed
+ * grunt-cmd-wrap
+ * https://github.com/crossjs/grunt-cmd-wrap
  *
  * Copyright (c) 2014 crossjs
  * Licensed under the MIT license.
@@ -10,9 +10,10 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    fed: {
-      task: {
-        config: 'config.json'
+    'cmd-wrap': {
+      proxy: {
+        dest: 'app',
+        port: 8000
       }
     }
 
@@ -20,6 +21,6 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.registerTask('default', ['fed']);
+  grunt.registerTask('default', ['cmd-wrap']);
 
 };
