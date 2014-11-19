@@ -14,7 +14,11 @@ module.exports = function(grunt) {
 
     var child = grunt.util.spawn({
         cmd: 'cmd-wrap',
-        args: [this.data.dest, this.data.port]
+        args: [
+          '--dest', this.data.dest,
+          '--port', this.data.port,
+          '--pref', this.data.pref
+        ]
       }, function (error, result, code) {
         if (error) {
           console.log(error);

@@ -12,8 +12,12 @@ module.exports = function(grunt) {
 
     'cmd-wrap': {
       proxy: {
-        dest: 'app',
-        port: 8000
+        // target folder relative to `process.cwd()`
+        dest: '',
+        // server listening port
+        port: 8000,
+        // url prefix to be trimed
+        pref: '/static'
       }
     }
 
