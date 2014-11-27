@@ -35,5 +35,11 @@
   "keywords": [
     "gruntplugin",
     "cmd-wrap"
-  ]
+  ],
+  "readme": "# grunt-cmd-wrap\r\n\r\n  > run [cmd-wrap](https://github.com/crossjs/cmd-wrap) with grunt.\r\n\r\n## 用法\r\n\r\n```js\r\ngrunt.initConfig({\r\n  'cmd-wrap': {\r\n    proxy: {\r\n      // target folder relative to `process.cwd()`\r\n      dest: '',\r\n      // server listening port\r\n      port: 8000,\r\n      // url prefix to be trimed\r\n      pref: '/static'\r\n    }\r\n  }\r\n});\r\n```\r\n",
+  "readmeFilename": "README.md",
+  "gitHead": "f20651accbbf091ac86d538ae3e3714c4736b489",
+  "_id": "grunt-cmd-wrap@0.0.4",
+  "_shasum": "b14ecdea5b4adcae3df60e9bf72d329539b1e82b",
+  "_from": "grunt-cmd-wrap@"
 }
