@@ -1,7 +1,7 @@
 {
   "name": "grunt-cmd-wrap",
-  "description": "run cmd-wrap with grunt.",
-  "version": "0.0.4",
+  "description": "A Grunt task plugin to transport `CommonJS` module to `CMD` module for `SeaJS` environment dynamically.",
+  "version": "0.1.0",
   "homepage": "https://github.com/crossjs/grunt-cmd-wrap",
   "author": {
     "name": "crossjs",
@@ -26,6 +26,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "finalhandler": "^0.3.2",
+    "handlebars": "^1.3.0",
+    "mime": "^1.2.11",
+    "serve-index": "^1.5.1"
+  },
   "devDependencies": {
     "grunt": "~0.4.2"
   },
@@ -35,11 +42,5 @@
   "keywords": [
     "gruntplugin",
     "cmd-wrap"
-  ],
-  "readme": "# grunt-cmd-wrap\r\n\r\n  > run [cmd-wrap](https://github.com/crossjs/cmd-wrap) with grunt.\r\n\r\n## 用法\r\n\r\n```js\r\ngrunt.initConfig({\r\n  'cmd-wrap': {\r\n    proxy: {\r\n      // target folder relative to `process.cwd()`\r\n      dest: '',\r\n      // server listening port\r\n      port: 8000,\r\n      // url prefix to be trimed\r\n      pref: '/static'\r\n    }\r\n  }\r\n});\r\n```\r\n",
-  "readmeFilename": "README.md",
-  "gitHead": "f20651accbbf091ac86d538ae3e3714c4736b489",
-  "_id": "grunt-cmd-wrap@0.0.4",
-  "_shasum": "b14ecdea5b4adcae3df60e9bf72d329539b1e82b",
-  "_from": "grunt-cmd-wrap@"
+  ]
 }

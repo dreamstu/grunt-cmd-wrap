@@ -8,16 +8,20 @@
 
 module.exports = function(grunt) {
 
+  'use strict';
+
   grunt.initConfig({
 
-    'cmd-wrap': {
-      proxy: {
-        // target folder relative to `process.cwd()`
-        dest: '',
+    wrap: {
+      server: {
+        // base directory
+        dest: '.',
         // server listening port
-        port: 8000,
-        // url prefix to be trimed
-        pref: '/static'
+        port: 8080,
+        // files to be wrapped
+        wrap: function(url) {
+          return /^\/Gruntfile\.js$/.test(url);
+        }
       }
     }
 
@@ -25,6 +29,6 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.registerTask('default', ['cmd-wrap']);
+  grunt.registerTask('default', ['wrap']);
 
 };

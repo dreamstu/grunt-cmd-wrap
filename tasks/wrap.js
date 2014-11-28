@@ -10,11 +10,11 @@ module.exports = function(grunt) {
 
   'use strict';
 
-  grunt.registerMultiTask('cmd-wrap', 'run cmd-wrap with grunt.', function () {
+  grunt.registerMultiTask('wrap', 'wrapping files for seajs.', function() {
 
     this.async();
 
-    return require('../lib/wrap')(this.data);
+    require('../lib/server')(this.data);
 
   });
 

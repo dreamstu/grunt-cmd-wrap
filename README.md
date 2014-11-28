@@ -1,19 +1,21 @@
 # grunt-cmd-wrap
 
-  > run [cmd-wrap](https://github.com/crossjs/cmd-wrap) with grunt.
+  > A Grunt task plugin to transport `CommonJS` module to `CMD` module for `SeaJS` environment dynamically.
 
 ## 用法
 
 ```js
 grunt.initConfig({
-  'cmd-wrap': {
-    proxy: {
-      // target folder relative to `process.cwd()`
-      dest: '',
+  wrap: {
+    server: {
+      // base directory
+      base: '.',
       // server listening port
-      port: 8000,
-      // url prefix to be trimed
-      pref: '/static'
+      port: 8080,
+      // files to be wrapped
+      wrap: function(url) {
+        return /^\/(app|mod|spm_modules).+\.js$/.test(url);
+      }
     }
   }
 });
