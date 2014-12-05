@@ -6,6 +6,8 @@
 
   > A Grunt task plugin to transport `CommonJS` module to `CMD` module for `SeaJS` environment dynamically.
 
+  > Grunt 插件：通过 Web 服务实时地将 CommonJS 模块转化成 CMD 模块，方便 SeaJS 环境中的开发调试。
+
 ## 背景
 
 - [SPM](https://github.com/spmjs/spm) 版本从 2 升级到 3，遵循的规范从 CMD 转为 CommonJS；
