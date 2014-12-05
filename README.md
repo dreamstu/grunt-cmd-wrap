@@ -1,3 +1,7 @@
+[![NPM version](https://badge.fury.io/js/grunt-cmd-wrap.png)](http://badge.fury.io/js/grunt-cmd-wrap)
+
+[![NPM](https://nodei.co/npm/grunt-cmd-wrap.png?downloads=true)](https://nodei.co/npm/grunt-cmd-wrap/)
+
 # grunt-cmd-wrap
 
   > A Grunt task plugin to transport `CommonJS` module to `CMD` module for `SeaJS` environment dynamically.
@@ -9,6 +13,10 @@
 - 纯前端的解决方案 [seajs-wrap](https://github.com/seajs/seajs-wrap) 存在不少弊端。
 
 ## 用法
+
+```bash
+$ npm install --save-dev grunt-cmd-wrap
+```
 
 ```js
 grunt.initConfig({
