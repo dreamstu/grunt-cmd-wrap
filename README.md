@@ -1,12 +1,10 @@
-[![NPM version](https://badge.fury.io/js/grunt-cmd-wrap.png)](http://badge.fury.io/js/grunt-cmd-wrap)
-
-[![NPM](https://nodei.co/npm/grunt-cmd-wrap.png?downloads=true)](https://nodei.co/npm/grunt-cmd-wrap/)
-
-# grunt-cmd-wrap
+# grunt-cmd-wrap [![NPM version](https://badge.fury.io/js/grunt-cmd-wrap.png)](http://badge.fury.io/js/grunt-cmd-wrap)
 
   > A Grunt task plugin to transport `CommonJS` module to `CMD` module for `SeaJS` environment dynamically.
 
   > Grunt 插件：通过 Web 服务实时地将 CommonJS 模块转化成 CMD 模块，方便 SeaJS 环境中的开发调试。
+
+[![NPM](https://nodei.co/npm/grunt-cmd-wrap.png?downloads=true)](https://nodei.co/npm/grunt-cmd-wrap/)
 
 ## 背景
 
