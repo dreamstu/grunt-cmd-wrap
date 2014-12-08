@@ -34,3 +34,7 @@ grunt.initConfig({
   }
 });
 ```
+
+```bash
+$ grunt wrap
+```
