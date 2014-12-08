@@ -22,12 +22,13 @@ $ npm install --save-dev grunt-cmd-wrap
 grunt.initConfig({
   wrap: {
     server: {
-      // base directory
+      // 主目录，可选，默认：“.”
       base: '.',
-      // server listening port
+      // Web 服务端口，可选，默认：“8080”
       port: 8080,
-      // files to be wrapped
+      // 过滤函数，可选
       wrap: function(url) {
+        // 返回 true 则执行 wrapping
         return /^\/(app|mod|spm_modules).+\.js$/.test(url);
       }
     }

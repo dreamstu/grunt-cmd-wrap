@@ -15,13 +15,9 @@ module.exports = function(grunt) {
     wrap: {
       server: {
         // base directory
-        dest: '.',
+        base: 'tests',
         // server listening port
-        port: 8080,
-        // files to be wrapped
-        wrap: function(url) {
-          return /^\/Gruntfile\.js$/.test(url);
-        }
+        port: 8000
       }
     }
 
